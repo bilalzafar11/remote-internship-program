@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* ---------------------- */
+/*         HEADER         */
+/* ---------------------- */
+
+header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Site Title */
+header h1 {
+  font-size: 26px;
+  color: #222;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #2575fc;
+  font-weight: 600;
+}
+
+
+
+/* -------- BENEFITS SECTION -------- */
+
+.benefits {
+  background-color: #ffffff;  /* Clean white background */
+  padding: 40px 20px;         /* Spacing for top and bottom */
+  text-align: center;         /* Centered heading and list */
+}
+
+.benefits h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.benefits ul {
+  list-style: none;           /* Remove default bullet points */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;           /* Keep list centered and readable */
+}
+
+.benefits li {
+  font-size: 18px;
+  margin-bottom: 15px;        /* Space between each bullet point */
+  color: #444;
+}
+
+
+
+/* -------- FOOTER SECTION -------- */
+
+footer {
+  background-color: #222;       /* Dark background */
+  color: #fff;                  /* White text */
+  text-align: center;           /* Centered content */
+  padding: 30px 20px;           /* Spacing around footer */
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;        /* Clean link look */
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;   /* Subtle hover effect */
+  color: #f0c040;               /* Optional: adds a modern accent on hover */
+}
+
+
+/* -------- RESPONSIVE DESIGN -------- */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .hero,
+  .about,
+  .benefits,
+  footer {
+    padding: 20px 15px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+}
+
+
+/* Add some color and button styling */
+.hero {
+  background: linear-gradient(to right, #2c2c2c, #4f4f4f); /* Dark grey gradient */
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+
+}
+
+
+
+
+
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #2575fc;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  color: #1111cb;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
